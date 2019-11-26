@@ -1,8 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `news` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
-USE `news`;
+CREATE DATABASE  IF NOT EXISTS `news_stack` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+USE `news_stack`;
 -- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: news
+-- Host: 127.0.0.1    Database: news_stack
 -- ------------------------------------------------------
 -- Server version	5.6.34-log
 

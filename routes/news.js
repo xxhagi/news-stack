@@ -13,8 +13,8 @@ module.exports = function(app, conn, upload) {
     category.get(conn, function(categoryList) {
 
       var sql = "SELECT a.*, c.title as `category_title` "
-                + "FROM news.article a "
-                + "INNER JOIN news.category c on a.category = c.id "
+                + "FROM article a "
+                + "INNER JOIN category c on a.category = c.id "
       var sqlParam = []
 
       if (selectedCategory) {
@@ -70,8 +70,8 @@ module.exports = function(app, conn, upload) {
 
     category.get(conn, function(categoryList) {
       var sql = "SELECT a.*, c.title as `category_title` "
-                + "FROM news.article a "
-                + "INNER JOIN news.category c on a.category = c.id "
+                + "FROM article a "
+                + "INNER JOIN category c on a.category = c.id "
                 + "WHERE a.id=?";
 
       conn.query(sql, [id], function(err, news, fields){
@@ -144,8 +144,8 @@ module.exports = function(app, conn, upload) {
   router.get('/:id', (req, res) => {
     var id = req.params.id;
     var sql = "SELECT a.*, c.title as `category_title` "
-              + "FROM news.article a "
-              + "INNER JOIN news.category c on a.category = c.id "
+              + "FROM article a "
+              + "INNER JOIN category c on a.category = c.id "
               + "WHERE a.id=?";
 
     conn.query(sql, [id], function(err, news, fields){
