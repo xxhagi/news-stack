@@ -10,3 +10,5 @@ npm install
 supervisor app.js
 ```
 ## 안녕하세요오
+## 저는 강혜승이에요
+## 저는 포도에요
